@@ -20,7 +20,7 @@ header {
 .header-text {
     color: white;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -89,7 +89,7 @@ section {
 }
 
 /* Responsive for iPhone 13 and 14 */
-@media (max-width: 430px) {
+@media only screen and (min-width: 300px) and (max-width: 430px) {
     header {
         height: 80px;
     }
@@ -103,7 +103,7 @@ section {
     }
 
     main {
-        margin-top: 180px;
+        margin-top: 150px;
     }
 
     footer {
@@ -111,10 +111,11 @@ section {
     }
 
     section {
-        margin-top: 40px; /* Correction de la classe */
+        margin-top: 130px; /* Correction de la classe */
     }
 
     .commencer {
-        margin-top: 40px; /* Cette règle peut rester ici si nécessaire */
+        margin-top: 50px; /* Cette règle peut rester ici si nécessaire */
+        font-size: 40px;
     }
 }
