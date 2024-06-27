@@ -74,7 +74,7 @@ section {
     margin-top: 90px; /* Déplacer cette règle ici */
 }
 
-.commencer {
+#commencer {
     font-size: 50px;
     border: none;
     border-radius: 90px; /* Simplification de la règle de border-radius */
@@ -83,7 +83,7 @@ section {
     background-color: #FFFFFF;
 }
 
-.commencer:hover {
+#commencer:hover {
     cursor: pointer;
     background-color: #65DAFF;
 }
@@ -114,7 +114,7 @@ section {
         margin-top: 130px; /* Correction de la classe */
     }
 
-    .commencer {
+    #commencer {
         margin-top: 50px; /* Cette règle peut rester ici si nécessaire */
         font-size: 40px;
     }
