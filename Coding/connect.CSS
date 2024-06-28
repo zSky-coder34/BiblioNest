@@ -81,14 +81,20 @@ footer {
 
 }
 
-.help {
+#help {
     color: #00FFF0;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    background: none;
+    border: none;
 }
 
-.connexion {
+#help:hover {
+    cursor: pointer;
+}
+
+#connexion {
     margin-top: 90px;
     font-size: 30px;
     height: 50px;
@@ -100,6 +106,10 @@ footer {
     padding-right: 9px;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+#connexion:hover {
+    cursor: pointer;
 }
 
 .error {
@@ -123,12 +133,12 @@ footer {
         outline: none;
     }
 
-    .help {
+    #help {
         font-size: 9px;
         font-weight: bold;
     }
 
-    .connexion {
+    #connexion {
         height: 40px;
     }
 }
