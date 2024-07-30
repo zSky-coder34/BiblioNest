@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/profil.css">
+    <script defer src="../JS/supression.js"></script>
+    <title>BiblioNest</title>
+</head>
+<body>
+    
+    <header>
+        <button id="burgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <div>
+            <div class="header-text">BiblioNest</div>
+        </div>
+    </header>
+
+    <div id="overlay"></div>
+
+    <div id="sidebar">
+        <div id="profile">
+            <div id="profileLogo"></div>
+            <div class="username" id="username"></div>
+        </div>
+        <div id="content">
+            <button id="accueil">ACCUEIL</button>
+            <button id="mes-livres">MES LIVRES</button>
+            <button id="ajout">AJOUT</button>
+            <button id="profil">PROFIL</button>
+            <button id="nous-contacter">NOUS CONTACTER</button>
+        </div>
+        <div id="content-deco">
+            <button id="deco">DÉCONNEXION</button>
+        </div>
+    </div>
+
+    <div class="login-cont">
+        <form action="../PHP/profil.php" method="post" id="form" enctype="multipart/form-data">
+            <div id="imgg">
+                <div id="image-upload-placeholder" onclick="triggerFileInput()">
+                    <img id="image-preview" style="display: none;"/>
+                </div>
+                <button id="X" type="button">X</button>
+            </div>
+            <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+            <input type="text" name="name" id="name" placeholder="Nom d'utilisateur" maxlength="20">
+            <input type="email" name="mail" id="mail" placeholder="email d'utilisateur" maxlength="40">
+            <div class="squ">
+                <input type="password" name="mdp" id="mdp" placeholder="mot de passe" minlength="8" maxlength="20" required>
+                <button type="button" id="voir_mdp">Affichez</button>
+            </div>
+            <div id="error">L'un des champs renseignés ne convient pas aux exigences</div>
+            <button type="submit" id="subm">Enregistrer</button>
+        </form>
+    </div>
+
+    <div id="fond">
+        <div id="menuu">Voulez-vous réellement supprimer votre compte ? Cet acte sera irréversible !</div>
+        <div id="selection">
+        <button id="oui">OUI</button>
+        <button id="non">NON</button>
+        </div>
+    </div>
+
+    <button type="button" id="del">Supprimer le compte</button>
+
+    <script src="../JS/profil.js"></script>
+</body>
+</html>

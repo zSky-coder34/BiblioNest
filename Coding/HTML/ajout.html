@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ajout.css">
+    <script defer src="../JS/deco.js"></script>
+    <title>BiblioNest</title>
+</head>
+<body>
+
+    <header>
+        <button id="burgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <div>
+            <div class="header-text">BiblioNest</div>
+        </div>
+    </header>
+
+    <div id="overlay"></div>
+
+    <div id="sidebar">
+        <div id="profil">
+            <div id="profileLogo"></div>
+            <div class="username" id="username"></div>
+        </div>
+        <div id="content">
+            <button id="accueil">ACCUEIL</button>
+            <button id="mes-livres">MES LIVRES</button>
+            <button id="ajout">AJOUT</button>
+            <button id="profill">PROFIL</button>
+            <button id="nous-contacter">NOUS CONTACTER</button>
+        </div>
+        <div id="content-deco">
+            <button id="deco">DÉCONNEXION</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="../PHP/ajout.php" method="post" enctype="multipart/form-data">
+                <div class="image-upload-wrapper">
+                    <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+                    <div class="image-upload-placeholder" onclick="triggerFileInput()">Ajouter une image</div>
+                    <img id="image-preview" style="display: none;"/>
+                    <button id="X" type="button">X</button>
+                </div>
+                <input type="text" id="title" name="title" placeholder="Titre" required><br>
+                <input type="text" id="author" name="author" placeholder="Auteur"><br>
+                <input type="date" id="created_at" name="created_at"><br>
+                <input type="text" id="genre" name="genre" placeholder="Genre"><br>
+                <div class="status">
+                    <label id="luu"><input type="radio" name="status" value="lu" required> Lu</label>
+                    <label id="lire"><input type="radio" name="status" value="à lire" required> À lire</label>
+                </div>
+                <button id="sub" type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="../JS/ajout.js"></script>
+</body>
+</html>

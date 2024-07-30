@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/recup3.css">
+    <title>Changement de mot de passe</title>
+</head>
+<body>
+    <main>
+        <div class="limit-text">
+            <div class="cadre_text">
+                <span class="text">Le mot de passe doit contenir entre 8 et 20 caractères, un numéro, et au moins un caractère spécial parmi les suivants: @, #, $, %, &, *, !</span>
+            </div>
+        </div>
+        <div class="password-reset-container">
+            <form method="post" action="../PHP/recup3.php" id="password-reset-form" class="password-reset-form">
+                <div class="squ">
+                    <input type="password" id="new_password" name="new_password" placeholder="Nouveau mot de passe" required>
+                    <button type="button" id="voir_mdp">Affichez</button>
+                </div>
+                <div class="squ2">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez nouveau mot de passe" required>
+                    <button type="button" id="voir_mdp2">Affichez</button>
+                </div>
+                <button id="sub" type="submit">Valider</button>
+                <span id="error">Le mot de passe renseigné ne convient pas aux exigences</span>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="footer-text">© 2024 BiblioNest Tous droits réservés</div>
+        </div>
+    </footer>
+    <script src="../JS/recup3.js"></script>
+</body>
+</html>

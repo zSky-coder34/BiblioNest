@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/recup2.css">
+    <title>BiblioNest</title>
+</head>
+<body>
+    <main>
+        <div class="limit-text">
+            <div class="cadre_text">
+                <span class="text">Vous avez oublié votre mot de passe ? Ne vous en faites pas, nous pouvons vous aider à le récupérer !</span>
+            </div>
+         </div>
+         <div class="password-reset-container">
+            <form action="../PHP/recup2.php" id="password-reset-form" class="password-reset-form" method="post">
+                <input type="text" id="code" name="code" placeholder="Entrez le code à 6 chiffres" maxlength="6" required>
+                <button id="sub" type="submit">Vérifier</button>
+                <span class="error">Code incorrect ou expiré !</span>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <div class="footer-text">© 2024 BiblioNest Tous droits réservés</div>
+        </div>
+    </footer>
+
+    <script src="../JS/recup2.js"></script>
+</body>
+</html>

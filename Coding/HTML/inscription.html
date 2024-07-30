@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inscription.css">
+    <title>BiblioNest</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="header-text">BiblioNest</div>
+        </div>
+    </header>
+
+    <div class="info-container">
+        <i id="info-icon">i</i>
+        <div id="info">Pseudo: <br> <br> Ajoutez un pseudo souhaité. Ne mettez pas votre vrai nom, prénom ou toute autre information
+            personnelle. <br> <br>Email: <br> <br> Ajoutez votre adresse email pour vous inscrire ne mettez pas de fausse adresse email. <br> <br> Mot de passe: <br> <br> Ajoutez un mot de passe. Le mot de passe doit
+            contenir entre 8 et 20 caractères, un numéro, et au moins un caractère spécial parmi les suivants: @, #, $,
+            %, &, *, !.</div>
+    </div>
+
+    <div class="login-cont">
+        <form action="../PHP/Register.php" method="post" id="form">
+            <input type="text" name="name" id="name" placeholder="Nom d'utilisateur" maxlength="20" required>
+            <input type="email" name="mail" id="mail" placeholder="email" maxlength="40" required>
+            <div class="squ">
+                <input type="password" name="mdp" id="mdp" placeholder="mot de passe" minlength="8" maxlength="20" required>
+                <button type="button" id="voir_mdp">Affichez</button>
+            </div>
+            <div id="error">L'un des champs renseignés ne convient pas aux exigences</div>
+            <button type="submit" id="subm">Inscription</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <div class="footer-text">© 2024 BiblioNest Tous droits réservés</div>
+        </div>
+    </footer>
+
+    <script src="../JS/inscription.js"></script>
+</body>
+
+</html>

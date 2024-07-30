@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ajout.css">
+    <title>BiblioNest</title>
+</head>
+<body>
+    
+    <form action="ajout.php" method="post" enctype="multipart/form-data">
+
+        <input type="file" id="image" name="image">
+        <input type="text" id="title" name="title" placeholder="Titre" required>
+        <input type="text" id="author" name="author" placeholder="Auteur">
+        <input type="date" id="created_at" name="created_at" required>
+        <input type="text" id="genre" name="genre" placeholder="Genre">
+        <button id="lire" value="à lire">À lire</button>
+        <button id="lu" value="lu">Lu</button>
+        
+        <button type="submit">Valider</button>
+    </form>
+
+    <script src="../JS/ajout.js"></script>
+</body>
+</html>
